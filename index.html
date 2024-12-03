@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Trishna Sathe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #d1a0bb;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .sidebar img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .sidebar p {
+            font-size: 14px;
+            color: #000000;
+            margin: 5px 0;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #060606;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .sidebar a:hover {
+            color: #007bff;
+        }
+
+        .sidebar .social-icons a {
+            margin: 0 5px;
+            color: #0b0a0a;
+        }
+
+        .sidebar .social-icons a:hover {
+            color: #185b9e;
+        }
+
+        .sidebar .footer {
+            font-size: 12px;
+            color: #060202;
+            margin-top: 20px;
+        }
+
+        .main-content {
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-image: url('simple-background.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .main-content h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .main-content h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .main-content .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #5f0808;
+            text-decoration: none;
+            color: #bb1212b0;
+            display: inline-block;
+        }
+
+        .main-content .button:hover {
+            background-color: #9b4b4b;
+            color: #570a55;
+        }
+
+        .main-content .button i {
+            margin-left: 10px;
+        }
+
+        /* Resume Button on Top Right */
+        .resume-download {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #2e8aec;
+            color: #900a0a;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-download:hover {
+            background-color: #0056b3;
+        }
+
+        .resume-link {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img alt="Profile picture of Trishna Sathe" src="TrishnaProfile_photo.jpeg">
+        <h1>Trishna Sathe</h1>
+        <p>trishnarameshsathe04@gmail.com</p>
+        <p>+918806459577</p>
+        <a href="#">INTRODUCTION</a>
+        <a href="about.html">ABOUT</a>
+        <a href="project.html">PROJECTS</a>
+        <a href="contact.html">CONTACT</a>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/trishna_sathe/profilecard/?igsh=MWpkMTNyanQ5YmM3aw==">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/trishna-sathe-a6b6582a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/TrishnaRSathe">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div>
+            <h1>Hi!</h1>
+            <h2>I'm Trishna</h2>
+            <a class="button" href="about.html">
+                KNOW MORE
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <a class="button resume-link" href="resume.html">
+                RESUME
+                <i class="fas fa-file-alt"></i>
+            </a>
+        </div>
+        <!-- <a class="resume-download" href="resume.pdf" download="Trishna_Sathe_Resume.pdf">Download Resume</a> -->
+    </div>
+</body>
+</html>

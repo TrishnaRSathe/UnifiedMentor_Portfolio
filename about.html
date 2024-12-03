@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: row; /* Side-by-side layout */
+            height: 100%; /* Use 100% height for scrolling */
+            overflow: auto; /* Allow scrolling */
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 25%;
+            background-color: #f5f5f5;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            overflow-y: auto; /* Allow vertical scrolling in sidebar if needed */
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%; /* Sidebar takes full screen height */
+        }
+
+        .sidebar img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .sidebar p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .sidebar a:hover {
+            color: #007bff;
+        }
+
+        .sidebar .social-icons a {
+            margin: 0 5px;
+            color: #333;
+        }
+
+        .sidebar .social-icons a:hover {
+            color: #007bff;
+        }
+
+        .sidebar .footer {
+            font-size: 12px;
+            color: #999;
+            margin-top: 20px;
+        }
+
+        /* Main Content */
+        .main-content {
+            width: 75%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-left: 25%; /* Offset for the sidebar */
+            height: 100%;
+            overflow-y: auto; /* Enable scrolling when content overflows */
+        }
+
+        /* About Me Section Styles */
+        #about {
+            padding: 20px;
+            margin: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #about:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bio, .education, .work-experience, .hobbies {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .bio:hover, .education:hover, .work-experience:hover, .hobbies:hover {
+            background-color: #f0f8ff;
+        }
+
+        h2 {
+            color: #35424a;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        h3:hover {
+            color: #1abc9c;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            transition: color 0.3s ease;
+        }
+
+        p:hover {
+            color: #34495e;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: static;
+            }
+
+            .main-content {
+                width: 100%;
+                padding: 10px;
+                margin-left: 0;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img alt="Profile picture of Trishna Sathe" src="TrishnaProfile_photo.jpeg">
+        <h1>Trishna Sathe</h1>
+        <p>trishnarameshsathe04@gmail.com</p>
+        <p>+918806459577</p>
+        <a href="index.html">INTRODUCTION</a>
+        <a href="about.html">ABOUT</a>
+        <a href="project.html">PROJECTS</a>
+        <a href="contact.html">CONTACT</a>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/trishna_sathe/profilecard/?igsh=MWpkMTNyanQ5YmM3aw==">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/trishna-sathe-a6b6582a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/TrishnaRSathe">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="bio">
+                    <h3>Biography</h3>
+                    <p>Hello! I'm Trishna Sathe, a passionate web developer with a love for creating dynamic and user-friendly websites. I enjoy learning new technologies and improving my skills.</p>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>Bachelor's Degree in Information Technology - Sinhgad Institute of Technology, Lonavala, 2024</li>
+                    </ul>
+                </div>
+                <div class="work-experience">
+                    <h3>Work Experience</h3>
+                    <ul>
+                        <li>Web Development Projects - Academic and Personal</li>
+                    </ul>
+                </div>
+                <div class="hobbies">
+                    <h3>Hobbies</h3>
+                    <p>In my free time, I playing badminton,listening music  , and experimenting with new programming languages.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
